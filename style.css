@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.3rem;
+    color: white;
+    background-image: url(/mink-mingle-HRyjETL87Gg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.main_content {
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 7rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
