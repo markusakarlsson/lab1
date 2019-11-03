@@ -70,12 +70,30 @@ function room3() {
     }
 }
 
-function loadKöket() {
-    text.innerHTML = "En fjärrkontroll är väl ingen kylvara direkt men med en törstig ägare kan allt hända... Vill du öppna kylen och titta?"
+function loadVardagsrummet() {
+    text.innerHTML = "Vilken jobbig tystnad det var här, spring snabbt vidare!! Köket eller sovrummet up next?"
     button.onclick = room4
 }
 
 function room4() {
+    const choice = input.value
+    input.value = ""
+    
+    if (choice === "köket") {
+        loadKöket()
+    } else if (choice === "sovrummet") {
+        loadSovrummet()
+    } else {
+        // berätta för användaren att hen matade in ett felkaktigt val
+    }
+}
+
+function loadKöket() {
+    text.innerHTML = "En fjärrkontroll är väl ingen kylvara direkt men med en törstig ägare kan allt hända... Vill du öppna kylen och titta?"
+    button.onclick = room5
+}
+
+function room5() {
     const choice = input.value
     input.value = ""
     
@@ -89,10 +107,14 @@ function room4() {
 }
 
 function loadFjärrkontroll() {
-    text.innerHTML = "GRATTIS till mig och dig, vi löste problemet tillsammans - kvällen är räddad!"
-    // button.onclick = room4
-    // img = document.createElement('img');
-    // img.src = "remote.jpg";
-    // document.body.appendChild(img);
-    
+    text.innerHTML = "Gött!! Du hittade den och min kväll är räddad!"
+    document.body.style.backgroundImage = "url('remote.jpg')"
+    document.getElementById("input").style.display = "none"
+    document.getElementById("button").style.display = "none"
+}
+
+function loadGameOver() {
+    text.innerHTML = "Game Over, jag vill inte ha hjälp av någon som inte letar överallt..... Ut ur min lägenhet!!"
+    document.getElementById("input").style.display = "none"
+    document.getElementById("button").style.display = "none"
 }
