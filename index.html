@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hitta fjärrkontrollen</title>
     <link rel="stylesheet" href="style.css">
-    <sript src="script.js"></sript>
+    <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,12 +14,11 @@
         <div class="main_content">
             <p>Äntligen kommer du till undsättning! <br>
             Glaset är uppfyllt, skålen är maxad, nu är det bara musiken som saknas...<br>
-            Hjälp mig att hitta fjärrkontrollen så att jag kan luta mig tillbaka!!
+            Hjälp mig att hitta fjärrkontrollen så att jag kan luta mig tillbaka!!<br>
+            Vill du börja leta i sovrummet eller vardagsrummet?
             </p>
-            <form>
-                <input type="text" placeholder="Skriv ditt namn här!">
-                <button type="submit">Leta!</button>
-            </form>
+            <input type="text" placeholder="Skriv in vart du vill leta" size="40">
+            <button type="submit" onclick="start()">Leta</button>
         </div>
     </main>
     
