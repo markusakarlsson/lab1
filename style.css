@@ -12,6 +12,7 @@ body {
     display: flex;
 }
 
+/* Styling for input field and text */
 .main_content {
     flex-wrap: wrap;
     flex-direction: row;
