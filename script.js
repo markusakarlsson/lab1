@@ -108,7 +108,7 @@ function room5() {
 
 function loadFjärrkontroll() {
     text.innerHTML = "Gött!! Du hittade den och min kväll är räddad!"
-    document.body.style.backgroundImage = "url('remote.jpg')"
+    document.body.style.backgroundImage = "url('./remote.jpg')"
     document.getElementById("input").style.display = "none"
     document.getElementById("button").style.display = "none"
 }
